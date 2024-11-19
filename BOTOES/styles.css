@@ -1,0 +1,65 @@
+
+body {
+    background: #222222; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    border-image: linear-gradient(45deg, #00ff00, #0000ff) 1;
+    animation: borderAnimation 3s linear infinite; 
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, #00ff00, #0000ff);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #0000ff, #00ff00);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #00ff00, #0000ff);
+    }
+}
+
+.buton {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
