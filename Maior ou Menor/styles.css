@@ -1,0 +1,9 @@
+.mensagem {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 20%;
+}
